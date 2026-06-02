@@ -46,6 +46,14 @@ public class Resultado {
     public void setTiempoMillis(double tiempoMillis) {
         this.tiempoMillis = tiempoMillis;
     }
+    @Override
+public String toString() {
+    return String.format("%s | %s | %d | %.2f ms", 
+            this.escenario, 
+            this.algoritmo, 
+            this.sample, 
+            this.tiempoMillis);
+}   
     
     
 }

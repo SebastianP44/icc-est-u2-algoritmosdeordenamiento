@@ -17,13 +17,14 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
-        return edad;
-    }
+        public int getEdad() {
+            return edad;
+        }
 
     public void setEdad(int edad) {
         this.edad = edad;
     }   
+    
 
     public int getCriterioOrdenamiento(){
         int valorNombre = 0;
@@ -34,15 +35,7 @@ public class Persona {
         edad*100000+valorNombre;
 
     }
-    public static Persona[] generarPersonas(int cantidad){
-        Persona[] personas = new Persona[cantidad];
-        for (int i =0;i<cantidad;i++){
-            String nombre= "Persona"+(i+1);
-            int edad = (int) (Math.random()*101);
-            personas[i]=new Persona(nombre,edad);
-        }
-        return personas;
-
-    }
+    
+    
 
 }
